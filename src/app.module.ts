@@ -1,9 +1,5 @@
-import { Module } from "@nestjs/common";
+import { Module } from '@nestjs/common';
+import { UsersCommandsModule } from './application/commands/users/users-commands.module';
 
-
-@Module({
-  imports: [],
-  controllers: [],
-  providers: [],
-})
+@Module({ imports: [UsersCommandsModule] })
 export class AppModule {}
